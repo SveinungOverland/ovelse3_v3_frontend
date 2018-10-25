@@ -1,7 +1,9 @@
 export default (theme) => ({
 
     root: {
-
+        height: '100vh',
+        width: '100vw',
+        backgroundColor: theme.pageBackground,
     },
 
     appbar: {
@@ -9,6 +11,7 @@ export default (theme) => ({
     },
 
     main: {
+        paddingTop: 80,
     },
 
 });

@@ -16,5 +16,7 @@ export default createMuiTheme({
         contrastText: 'white',
       },
     },
+
+    pageBackground: "#E4E4E4"
 });
 

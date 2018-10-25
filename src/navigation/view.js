@@ -5,6 +5,11 @@ import { withStyles } from '@material-ui/core/styles';
 
 // UI imports
 import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 // Project imports
@@ -16,7 +21,14 @@ const View = (props) => {
     return (
         <div className={classes.root}>
             <AppBar className={classes.appbar}>
-                <h1>Hello world</h1>
+                <Toolbar variant="dense">
+                    <IconButton color="inherit" aria-label="Menu">
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography variant="h6" color="inherit">
+                        Photos
+                    </Typography>
+                </Toolbar>
             </AppBar>
             <main className={classes.main}>
                 { props.children }

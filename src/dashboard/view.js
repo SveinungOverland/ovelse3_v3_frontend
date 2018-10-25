@@ -13,7 +13,7 @@ const View = (props) => {
     const { state, classes } = props;
 
     return (
-        <Paper className={classes.root}>
+        <Paper elevation={0} className={classes.root}>
 
             <h1>Hello world</h1>
 
